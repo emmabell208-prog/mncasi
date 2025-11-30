@@ -1,0 +1,5 @@
+[build]
+  command = "cd frontend && npm install && npm run build"
+  publish = "frontend/dist"
+[context.production.environment]
+  VITE_API_URL = "https://<your-railway-backend-url>"
